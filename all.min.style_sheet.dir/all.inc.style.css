@@ -1,0 +1,44 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root
+{
+    --themeBGColor:#0082e6;
+    --themeAHBgC:#1b9bff;
+    --themeColor:#ffff;
+    --themeFontFamiy:"montserrat";
+    --themeBGCSec:#2c3e50;
+    --theme_linear_BGC:linear-gradient(to right,#3e688c,#03a63c,#5ba66e,#69bf6f);
+    --theme_linear_BGS:linear-gradient(to bottom,#3e688c,#03a63c,#5ba66e,#69bf6f);
+    --theme_linear_BGSH:linear-gradient(to top,#3e688c,#03a63c,#5ba66e,#69bf6f);
+    --theme_linear_BGCM:linear-gradient(to bottom,#3e688c,#03a63c,#5ba66e,#69bf6f);
+
+}
+body
+{
+    font-family: var(--themeFontFamiy);
+    animation: load_page .75s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes load_page {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button
+{
+-webkit-appearance:none;
+margin:0;
+}
+
+  

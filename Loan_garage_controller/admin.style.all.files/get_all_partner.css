@@ -1,0 +1,122 @@
+.aCus.setting
+{
+    background-color:rgba(225,225,225,0.25);
+    transition:.7s;
+    margin:0px auto;
+}
+.pir_con
+{
+    background-color:#e6e6e6;
+    display:inline-block;
+    padding:10px 15px;
+    border-radius:5px;
+    margin:10px;
+}
+.name_con
+{
+    padding:10px;
+    text-align:left;
+    font-size:1.3em;
+}
+.anc
+{
+    background-color:#11e311;
+    color:#ffff;
+    padding:8px;
+    border-radius:5px;
+    text-decoration:none;
+    border:none;
+}
+.go_to
+{
+    padding:15px;
+    text-align:right;
+}
+table td
+{
+    padding:10px 15px;
+    width:fit-content;
+}
+.col
+{
+    float:right;
+    margin:0px 0px 0px 8px;
+}
+.holder
+{
+    overflow-X:hidden;
+}
+.name_con>h3
+{
+    display:inline;
+    margin:0px 10px 0px 0px;
+}
+.form_con
+{
+    margin:0px 10px;
+    cursor:pointer;
+}
+.name_con
+{
+    background-color:#e5e5e5;
+    margin:10px;
+    border-radius:5px;
+    display:flex;
+    justify-content:space-around
+}
+.form_con
+{
+    float:right;
+    margin:0px 10px;
+    cursor:pointer;
+}
+.name_con
+{
+    background-color:#e5e5e5;
+    margin:10px;
+    border-radius:5px;
+}
+.pir_con
+{
+    overflow:auto;
+}
+.error_con
+{
+    margin:10px;
+    width:fit-content;
+    margin:10px auto;
+    padding:10px;
+    border-radius:5px;
+    color:#ffff;
+    display: none;
+    opacity: 0;
+}
+.sub
+{
+    margin:0px 0px 0px 10px;
+    cursor:pointer
+}
+.cht
+{
+    font-size:16px;
+    margin:10px 0px;
+}
+@media(min-width:100px) and (max-width:490px)
+{
+    .sub
+    {
+        margin:10px ;
+    }
+}
+.edit_con
+{
+    padding:10px;
+    transform:translateX(-10px);
+    border-radius:5px;
+    outline:none;
+    border:1px solid rgba(0,0,0,0.1);
+}
+.edit_con:focus
+{
+   border:1px solid #11e311;
+}

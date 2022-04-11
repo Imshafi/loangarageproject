@@ -1,0 +1,356 @@
+html{
+    scroll-behavior: smooth;
+}
+.aCus.loan_apply
+{
+/*     background-color:var(--themeAHBgC); */
+    background-color:rgba(225,225,225,0.25);
+    transition:.7s;
+    margin:0px auto;
+}
+:root
+{
+    --focusBGC:#d8ffd8;
+    --focusBDR:rgb(43 217 43 / 0.5);
+    --one_width:752px;
+    --inp_width:345px;
+    --sub_label_fs:12px;
+    --sub_label_fc:#464D5F;
+    --time_focus:.3s;
+    --errorBGC_lab:red;
+    --errorBGC_con:#ffd7d7;
+    --errorC_lab:#fff;
+    --error_fs_lab:15px;
+    --starC:red;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button
+{
+  -webkit-appearance:none;
+  margin:0;
+}
+.star{
+    color:var(--starC);
+}
+.con_all_nav_fot
+{
+    display: none;
+}
+.error_lab
+{
+    background-color:var(--errorBGC_lab);
+    padding:5px;
+    font-size:var(--error_fs_lab);
+    border-radius:5px;
+    color:var(--errorC_lab);
+    width:160px;
+    text-align:center;
+    display:none;
+}
+.error_add_aad
+{
+    width:250px;
+    margin-top:10px;
+}
+.error_file
+{
+    width:250px;
+    margin-top:10px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    height:33px;
+    padding:10px;
+
+}
+.form_apply_loan_con
+{
+    margin:10px;
+}
+.form_apply_loan_con>.apply_loan_heading
+{
+    margin:10px 0px 5px 0px;
+    font-size:2em;
+}
+.form_apply_loan_con>.apply_form_para
+{
+    margin:0px 0px 20px 2px;
+    font-size:12px;
+}
+.nameContiner>.lab_inp_con
+{
+    display:inline-block;
+    width:var(--inp_width);
+    margin:0px 4px 10px 0px;
+}
+.inp
+{
+    width:100%;
+    height:40px;
+    padding:0px 10px;
+    outline:none;
+    border-radius:5px;
+    border:1px solid rgba(0,0,0,0.3);
+    border:2px solid var(--focusBDR);
+    margin:0px 0px 10px 0px;
+}
+.inp:focus,.inp:hover
+{
+    box-shadow:0px 0px 5px 0.6px var(--focusBDR);
+    transition:var(--time_focus);
+}
+.select_loan_con
+{
+    width:50%;
+}
+.sub_lab
+{
+    display:block;
+    font-size:var(--sub_label_fs);
+    color:var(--sub_label_fc);
+    margin:0px 0px 0px 2px;
+}
+.con:focus-within
+{
+    background-color:var(--focusBGC);
+    transition:var(--time_focus);
+}
+.whole_loan_app_con
+{
+    background-color:#ededed;
+    width:100%;
+    overflow:hidden;
+}
+.whole_loan_app_con .logo_loan_app_con
+{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+}
+.logo_loan_app_con img
+{
+    width:300px;
+    object-fit:cover;
+}
+.whole_loan_app_con .wholecontiner_form
+{
+    background-color:#ffff;
+    margin:10px auto;
+    border-radius:5px;
+    padding:10px;
+    box-shadow:0px 0px 3px 0.5px rgba(0,0,0,0.3);
+    width:var(--one_width);
+}
+.loanReturnShower
+{
+    display:none;
+    opacity:0;
+    text-align:center;
+    margin:20px 0px;
+    padding:10px;
+}
+#return_label
+{
+    padding:10px;
+    border-radius:5px;
+    font-size:1.2em;
+
+}
+.whole_loan_app_con .wholecontiner_form .con
+{
+    margin:10px 0px;
+    padding:10px 10px 10px 10px;
+    border-radius:5px;
+    overflow:hidden;
+
+}
+.con .main_label
+{
+    display:block;
+    margin:10px 0px;
+}
+.code_num
+{
+    width:100px;
+    display:inline-block;
+}
+.area
+{
+    width:90px;
+    display:inline-block;
+}
+.number
+{
+    width:200px;
+    display:inline-block;
+}
+.aad
+{
+    margin:25px 0px;
+}
+.city,.state
+{
+    width:calc(var(--inp_width) - 5px);
+    display:inline-block;
+}
+.city
+{
+    margin-right:10px
+}
+.state
+{
+    margin-left:10px;
+}
+.pin
+{
+    margin:25px 0px 0px 0px;
+}
+select
+{
+    font-size:18px;
+    padding:10px 0px;
+}
+#select_loan:nth-child(1)
+{
+    color:grey;
+}
+.loan_amt
+{
+   padding:10px;
+   border-radius:5px;
+}
+.cus
+{
+    margin:0px 0px 10px 0px;
+}
+.opaz{
+    opacity:0;
+    z-index:-1;
+    position:relative;
+}
+.choose_files_div
+{
+    height:120px;
+    width:100%;
+    margin:0px auto;
+    border-radius:5px;
+    margin-bottom:9px;
+}
+.choose_cursor
+{
+     height:100%;
+     width:100%;
+     background-color:rgba(166,162,162,0.3);
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     cursor:pointer;
+     color:#fff;
+     border-radius:5px;
+     border:1px dashed rgba(0,0,0,1);
+     overflow: auto;
+}
+.submit_continer
+{
+    text-align:center;
+    margin:10px 0px;
+}
+.submit_btn
+{
+    background-color:rgb(43 217 43 / 0.5);
+    color:#ffff;
+    padding:15px 20px;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+    font-size:15px;
+}
+.submit_btn:hover
+{
+    background-color:rgb(43 217 43 / 1);
+}
+.submit_btn:active
+{
+    animation:inOut 1s;
+}
+
+@keyframes inOut{
+    0%{
+        transform:scale(1)
+    }
+    50%{
+        transform:scale(0.8)
+    }
+    100%{
+        transform:scale(1)
+    }
+}
+@media (min-width:520px) and (max-width:815px)
+{
+   :root
+   {
+       --one_width:500px;
+       --inp_width:219px;
+   }
+}
+@media (max-width:519px)
+{
+   :root
+   {
+       --one_width:calc(100% - 10px);
+       --inp_width:calc(50% - 7px);
+   }
+   .city,state{
+       margin:0px
+   }
+   .error_lab{
+       margin:10px 0px;
+   }
+   .select_loan_con
+    {
+        width:100%;
+    }
+}
+@media (max-width:455px)
+{
+   .code_num,.area
+    {
+        width:calc(25% - 5px);
+    }
+    .number
+    {
+        width:50%;
+    }
+}
+@media (min-width:335px) and (max-width:415px)
+{
+   .code_num label,.area label,.number label
+    {
+        font-size:9px;
+    }
+}
+@media (max-width:335px)
+{
+   .code_num label,.area label,.number label,.state label,.city label
+    {
+        font-size:6px;
+    }
+    .inp
+    {
+        padding:0px;
+        padding-left:5px;
+    }
+    .whole_loan_app_con .wholecontiner_form
+    {
+        padding:5px;
+    }
+    .error_lab{
+        width:100%;
+        height:auto;
+    }
+    .logo_loan_app_con img
+    {
+        width:100%;
+    }
+}

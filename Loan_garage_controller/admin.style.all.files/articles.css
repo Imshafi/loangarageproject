@@ -1,0 +1,60 @@
+.whole_con
+{
+    background-color:#eaeaea;
+    height:calc(100vh - 80px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.msg_con
+{
+    color:#ffff;
+    margin:10px;
+    padding:10px;
+    border-radius:5px;
+}
+.sub_con
+{
+    background-color:#ffff;
+    padding:20px;
+    border-radius:5px;
+    border:1px solid rgba(0,0,0,0.3)
+}
+.heading_art
+{
+    text-align:center;
+    padding:10px;
+}
+.inp,.txt
+{
+    display:block;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid rgba(0,0,0,0.3);
+    outline:none;
+    margin:10px 10px 10px 10px;
+    width:calc(100% - 20px);
+    resize:none;
+}
+.txt
+{
+    height:200px;
+    display:block
+}
+.btn
+{
+    background-color:#11e311;
+    padding:10px;
+    border-radius:5px;
+    color:#ffff;
+    margin:10px;
+    float:left;
+    display:block;
+    border:none;
+    cursor:pointer;
+}
+.opa
+{
+    opacity:0
+}

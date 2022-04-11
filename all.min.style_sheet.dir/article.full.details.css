@@ -1,0 +1,144 @@
+.error_con
+{
+    background-color:red;
+    width:fit-content;
+    padding:10px;
+    color:#ffff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:5px;
+}
+.whole_con
+{
+    width:calc(100% - 10px);
+    overflow-X:hidden;
+    margin:10px 5px;
+    padding:10px 5px;
+    border-radius:5px;
+    border:2px solid rgba(0,0,0,0.5)
+}
+.heading_con
+{
+    padding:10px;
+    margin:10px 5px 5px 5px;
+    word-break:break-word;
+    border-radius:5px;
+    color:#11e311
+}
+h1
+{
+    font-weight:100;
+    font-size:2.5em;
+}
+.back
+{
+padding:10px;
+text-align:right
+}
+.go_back
+{
+    background-color:#11e311;
+    padding:10px;
+    margin:10px;
+    border-radius:5px;
+    color:#ffff;
+    text-decoration:none;
+}
+.sub_con
+{
+    width:100%;
+}
+.img_art
+{
+    width:50%;
+    float:left;
+    margin:0px 10px 0px 10px;
+}
+.content_con
+{
+    text-align:justify;
+    word-break:break-word;
+    line-height:25px;
+    padding:0px 10px;
+}
+@media (max-width:700px)
+{
+    .img_art
+    {
+        width:calc(100% - 20px );
+        margin:10px 10px;
+    }
+    .content_con
+    {
+        margin:10px 0px;
+    }
+} 
+@media (max-width:300px)
+{
+    h1
+    {
+        font-size:1.5em;
+    }
+} 
+@media (min-width:300px) and (max-width:400px)
+{
+    h1
+    {
+        font-size:1.8em;
+    }
+} 
+@media (min-width:400px) and (max-width:500px)
+{
+    h1
+    {
+        font-size:1.9em;
+    }
+} 
+@media (min-width:500px) and (max-width:600px)
+{
+    h1
+    {
+        font-size:2em;
+    }
+} 
+@media (min-width:600px) and (max-width:700px)
+{
+    h1
+    {
+        font-size:2.2em;
+    }
+}
+.del_con
+{
+    padding:10px;
+    text-align:right;
+    float:right
+}
+.btn-del
+{
+    background-color:red;
+    padding:10px;
+    border-radius:5px;
+    color:#ffff;
+    border:0px;
+    cursor:pointer;
+    font-size:1.01em;
+}
+.btn-del:hover
+{
+    background-color:#e20000
+}
+.content_con:focus,.heading_con:focus
+{
+    outline:none
+}
+.error_art
+{
+    display:block;
+    margin:20px;
+    text-align:center;
+    color:red;
+    display:none;
+}

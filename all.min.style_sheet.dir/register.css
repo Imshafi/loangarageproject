@@ -1,0 +1,94 @@
+.wholeContiner
+{
+    background-color:#e8e8e8;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.subContiner
+{
+    background-color:#ffff;
+    width:400px;
+    padding:10px;
+    border-radius:5px;
+    box-shadow:0px 0px 10px 0.1px  rgba(0,0,0,0.5);
+}
+.header_con
+{
+    padding:10px;
+    text-align:center;
+    margin:10px 0px;
+}
+table
+{
+/*     background-color:red; */
+    padding:0px;
+}
+td
+{
+    padding:10px 5px;
+/*     background-color:green; */
+}
+.inp
+{
+    height:30px;
+    border-radius:5px;
+    border:2px solid rgba(0,0,0,0.2);
+    transition:.5s;
+    outline:none;
+    padding:10px;
+}
+.inp:hover,.inp:focus
+{
+    box-shadow:0px 0px 5px 0.01px #11e311;
+    border-color:#11e311
+}
+.btn_con
+{
+    text-align:center;
+}
+.inp_sub
+{
+    background-color:#11e311;
+    color:#ffff;
+    padding:10px 15px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+.inp_sub:active
+{
+    animation:btn_click .4s
+}
+@keyframes btn_click{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(0.7);
+    }
+    100%
+    {
+        transform:scale(1)
+    }
+}
+#error_con
+{
+    text-align:center;
+    color:red;
+}
+.nodis
+{
+    display:none;
+    opacity:0;
+}
+.error_msg_pir
+{
+    color:red;
+    font-size:12px;
+    text-align:center
+}

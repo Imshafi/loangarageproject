@@ -1,0 +1,149 @@
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#d6d4d4;
+    border-radius:5px;
+}
+::-webkit-scrollbar-track{
+    background-color:#ffff;
+    border-radius:5px;
+}
+.partner_admin,.admin_partner
+{
+    background-color:rgba(225,225,225,0.2);   
+}.chat_whole_continer
+{
+    background-color:#ffff;
+    width:400px;
+    margin:10px auto;
+    height:calc(100vh - 100px);
+    padding:10px 0px;
+    border-radius:5px;
+    box-shadow:1px 1px 10px 2px rgba(0,0,0,0.2)
+}
+.heading_chat_admin
+{
+    height:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2em;
+    margin:0px 0px;
+    border-bottom:2px solid rgba(0,0,0,0.2);
+    margin:0px 7px;
+}
+.msg_whole_continer
+{
+    height:calc(100% - 80px);
+    margin:5px 5px;
+    padding:10px;
+    overflow:auto;
+    border-radius:5px;
+    border:2px solid rgba(0,0,0,0.2)
+}
+.send_msg_con
+{
+    height:40px;
+    display:flex;
+    justify-content:center;
+}
+.send_msg_inp
+{
+    resize:none;
+    border-radius:5px;
+    width:calc(100% - 50px);
+    border:2px solid rgba(0,0,0,0.2);
+    margin:0px 5px;
+    padding:10px;
+}
+.send_msg_inp:focus
+{
+    outline:none;
+    border-color:#36f236
+}
+.send_text_btn
+{
+    background-color:#94ec94;
+    border:none;
+    border-radius:50%;
+    height:40px;
+    width:40px;
+    cursor:pointer;
+    color:#ffff;
+    margin:0px 9px 0px 0px;
+}
+.send_text_btn:hover,.send_text_btn:active
+{
+    background-color:#36f236;
+}
+.send_text_btn:active
+{
+    animation:click .5s;
+}
+@keyframes click{
+    0%
+    {
+        transform:scale(1);
+    }
+    50%
+    {
+         transform:scale(0.8);
+    }
+    100%
+    {
+         transform:scale(1);
+    }
+}
+.pirticular_msg_con
+{
+    display:flex;
+    margin:10px 0px;
+}
+.msg_content_con
+{
+    padding:12px 12px 7px 12px;
+    margin:5px;
+    border-radius:5px;
+    box-shadow:0px 0px 3px 0px rgba(0,0,0,0.5);
+    max-width:50%;
+    min-width:110px;
+}
+.msg_content_lab
+{
+    display:inline-block;
+    max-width:100%;
+    word-wrap:break-word;
+    margin:0px 0px 5px 0px;
+}
+.time_con
+{
+    float:right;
+    font-size:9px;
+}
+.sended
+{
+    justify-content:right;
+    animation: downtoUp .2s ;
+}
+@keyframes downtoUp {
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.name_con
+{
+    text-align:center;
+}
+.name_lab
+{
+    width:75%;
+    height:100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}

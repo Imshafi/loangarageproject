@@ -1,0 +1,221 @@
+footer
+{
+    position: relative;
+    width: 100%;
+    background-color:#111;
+    padding: 50px 100px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: wrap;
+}
+footer .footer_content
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .footer_content .al_cl.about_us_con
+{
+    margin-right: 30px;
+}
+footer .footer_content .al_cl.about_us_con
+{
+    width:40%;
+}
+footer .al_cl h2
+{
+    position: relative;
+    color:#ffff;
+    font-weight:500;
+    margin-bottom:15px;
+}
+footer .footer_content h2:before
+{
+    content: '';
+    position: absolute;
+    left:0px;
+    bottom: -5px;
+    background-image: linear-gradient(to right,#3e688c, #03a63c,#5ba66e,#69bf6f);
+    width:50px;
+    height:3px;
+}
+footer p
+{
+    color:#999;
+    line-height: 25px;
+}
+.sm
+{
+    margin-top: 20px;
+    display: flex;
+}
+.sm li
+{
+    list-style-type: none;
+}
+.sm li a
+{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color:#ffff;
+}
+.sm li a .fb
+{
+    color:#3b5998;
+    font-size: 20px;
+}
+.sm li a .tw
+{
+    color:#00acee;
+    font-size: 20px;
+}
+.sm li a .in
+{
+    color:#8a3ab9;
+    font-size: 20px;
+}
+.sm li a .fb:hover
+{
+    transform: scale(1.7);
+}
+.sm li a .tw:hover
+{
+    transform: scale(1.7);
+}
+.sm li a .in:hover
+{
+    transform: scale(1.7);
+}
+.quick_links
+{
+    position: relative;
+    width:25%;
+}
+.quick_links ul li 
+{
+    list-style-type: none;
+}
+.quick_links ul li a
+{
+    color:#999;
+    text-decoration: none;
+    margin-bottom:15px;
+    display: inline-block;
+}
+.quick_links ul li a:hover 
+{
+    color:#ffff;
+}
+.contact_info
+{
+    width:calc(35% - 60px);
+    margin: 0px !important;
+}
+.contact_info .info
+{
+    position: relative;
+}
+.contact_info .info li 
+{
+    display: flex;
+    margin-bottom:16px ;
+}
+.contact_info .info li span:nth-child(1)
+{
+    color:#ffff;
+    font-size: 20px;
+    margin-right:10px;
+}
+.contact_info .info li span
+{
+    color:#999;
+}
+.contact_info .info li a
+{
+    color:#999;
+    text-decoration: none;
+}
+.contact_info .info li a:hover
+{
+    color:#ffff;
+}
+.koo_img
+{
+    width:99%;
+}
+.koo_img:hover{
+    transform:scale(1.2)
+}
+.copy_right_txt
+{
+    width: 100%;
+    background-color: #181818;
+    text-align: center;
+    color:#999;
+}
+@media (max-width:991px)
+{
+    footer
+    {
+        padding:40px;
+    }
+    footer .footer_content
+    {
+        flex-direction:column;
+    }
+    footer .footer_content .al_cl
+    {
+        margin-right:0px;
+        margin-bottom:40px;
+    }
+    footer .footer_content .al_cl.about_us_con,
+    .quick_links,
+    .contact_info
+    {
+        width:100%;
+    }
+    .copy_right_txt
+    {
+        padding:8px 40px;
+    }
+}
+@media (max-width:500px)
+{
+    footer
+    {
+        padding:20px;
+    }
+}
+@media (max-width:250px)
+{
+    .para_abt_us
+    {
+        word-break:break-all;
+    }
+}
+.bold
+{
+    font-weight:700;
+    color:#ffff
+}
+.red
+{
+    color:red;
+}
+.green
+{
+    color:green;
+}
+.para_abt_us
+{
+    padding:5px;
+}

@@ -1,0 +1,241 @@
+:root{
+    --bgClr:#d0d0d0;
+    --conbgc:#d8ffd8;
+    --subBgClr:#fff;
+    --focusBDR:rgb(43 217 43 / 0.5);
+    --btnBgclr:#94ec94;
+    --btnHoverBgc:rgb(43 217 43 / 1);
+}
+body
+{
+    background-color:grey
+}
+.aCus.login
+{
+/*     background-color:var(--themeAHBgC); */
+    background-color:rgba(225,225,225,0.25);
+    transition:.7s;
+    margin:0px auto;
+}
+.continer_content
+{
+    width:100%;
+    overflow:hidden;
+    padding:20px 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.loginWholeContiner
+{
+    background-color:var(--subBgClr);
+    width:450px;
+    margin:10px auto;
+    border-radius:5px;
+    padding:20px;
+    box-shadow:0px 0px 10px 0.1px rgba(0,0,0,0.5);
+}
+.loginHeadingContiner
+{
+    text-align:center;
+    margin:0px 0px 40px 0px;
+}
+.inpcon
+{
+    margin:10px 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+    padding:5px;
+}
+.inp
+{
+    height:35px;
+    width:250px;
+    padding:0px 10px;
+    outline:none;
+    border-radius:5px;
+    border:1px solid rgba(0,0,0,0.3);
+    margin:0px 0px 0px 10px;
+}
+.inp.user_password_inp
+{
+    margin:0px 0px 0px 22px;
+}
+.inp:focus,.inp:hover
+{
+    box-shadow:0px 0px 5px 0.6px var(--focusBDR);
+    transition:var(--time_focus);
+    border-color:var(--focusBDR);
+}
+.errorContiner{
+    text-align:center;
+    margin:5px;
+    display:none
+}
+.errorMsg
+{
+    color:red;
+    font-size:14px;
+}
+.userSubmitContiner
+{
+    text-align:center;
+    margin:20px 10px 80px 10px;
+}
+.userSubmitContiner .user_submit_inp
+{
+    background-color:var(--btnBgclr);
+    color:#ffff;
+    border-radius:5px;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+    width:100%
+}
+.userSubmitContiner .user_submit_inp:hover
+{
+    background-color:var(--btnHoverBgc);
+}
+.loginFooterContiner
+{
+    margin:10px;
+
+}
+.createAcca,.forgotPassword
+{
+    color:blue;
+}
+.forgotPassword
+{
+    float:right
+}
+.error_occ{
+    animation:error_occ .1s;
+}
+.createAcca
+{
+    background-color:var(--btnBgclr);
+    color:#ffff;
+    padding:5px;
+    border-radius:5px;
+    text-decoration:none;
+}
+.createAcca:hover
+{
+    background-color:var(--btnHoverBgc)
+}
+.userSubmitContiner .user_submit_inp:active{
+    animation:inOut 2s;
+}
+
+@keyframes inOut{
+    0%{
+        transform:scale(1)
+    }
+    50%{
+        transform:scale(0.8);
+    }
+    100%{
+        transform:scale(1)
+    }
+}
+@keyframes error_occ{
+    0%{
+        transform:translateX(0px)
+    }
+    25%{
+        transform:translateX(20px)
+    }
+    50%{
+        transform:translateX(0px)
+    }
+    75%{
+        transform:translateX(-20px)
+    }
+    100%{
+        transform:translateX(0px)
+    }
+}
+@media(max-width:500px){
+    .continer_content
+    {
+        padding:0px
+    }
+    .loginWholeContiner
+    {
+        width:100%;
+        height:100%;
+        padding:10px 0px;
+        border-radius:0px;
+        position:relative;
+    }
+    .loginHeadingContiner
+    {
+        margin:30px 0px;
+    }
+    .userSubmitContiner .user_submit_inp
+    {
+        background-color:var(--btnHoverBgc);
+        width:80%;
+    }
+    .loginContiner
+    {
+        margin:0px;
+    }
+    .inpcon
+    {
+        padding:0px;
+        margin:30px 0px;
+
+    } 
+    .inp{
+        width:calc(50% - 10px);
+        margin:0px 0px 0px 5px;
+    }
+    .userPasswordLab,.userNameLab{
+        width:140px;
+        text-align:left;
+        padding:0px;
+        margin:0px;
+    }
+    .inp.user_password_inp
+    {
+        margin:0px 0px 0px 5px;
+    }
+    .loginFooterContiner
+    {
+        height:auto;
+        margin:30px 0px;
+        padding:0px
+    }
+    .forgotPassword
+    {
+        float:right;
+        margin:0px 0px;
+        width:150px;
+    }
+    .userSubmitContiner
+    {
+        margin:0px 10px
+    }
+    .createAcca
+    {
+        display:block;
+        position:absolute;
+        bottom:0;
+        width:calc(100% - 20px);
+        text-align:center;
+        margin:20px 10px;
+        background-color:var(--btnHoverBgc);
+    }
+}
+@media(max-width:310px){
+    .userSubmitContiner .user_submit_inp
+    {
+        background-color:var(--btnHoverBgc);
+        width:100%;
+    }
+}
